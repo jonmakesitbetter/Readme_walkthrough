@@ -11,22 +11,17 @@ const questions = [
 {
     type: "input",
     message: "What is the description of your project?",
-    name:"Description"
-},
-{
-    type: "input",
-    message:"What is in your table of contents?",
-    name:"Table of Contents"
+    name:"description"
 },
 {
     type: "input",
     message:"What are  your installation instructions?",
-    name:"Installation"
+    name:"installation"
 },
 {
     type: "input",
     message:"What are you usage instructions?",
-    name:"Instructions"
+    name:"instructions"
 },
 {
     type: "input",
