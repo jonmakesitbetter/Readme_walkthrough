@@ -1,3 +1,6 @@
+const generateMarkdown = require('generatemarkdown');
+console.log(generateMarkdown.data);
+
 // array of questions for user
 const questions = [
     "What is your project title?",
