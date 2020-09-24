@@ -1,5 +1,5 @@
 const generateMarkdown = require('generatemarkdown');
-console.log(generateMarkdown.data);
+const inquirer = require('inquirer');
 
 // array of questions for user
 const questions = [
