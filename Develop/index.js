@@ -1,4 +1,4 @@
-const generateMarkdown = require('generatemarkdown');
+const generateMarkdown = require('./generatemarkdown');
 const inquirer = require('inquirer');
 
 // array of questions for user
@@ -6,55 +6,54 @@ const questions = [
 {
     type: "input",
     message: "What is your project title?",
-    name:"Title"
-}
+    name:"title"
+},
 {
     type: "input",
     message: "What is the description of your project?",
     name:"Description"
-}
+},
 {
     type: "input",
     message:"What is in your table of contents?",
     name:"Table of Contents"
-}
+},
 {
     type: "input",
     message:"What are  your installation instructions?",
     name:"Installation"
-}
+},
 {
     type: "input",
     message:"What are you usage instructions?",
     name:"Instructions"
-}
+},
 {
     type: "input",
     message:"What license are you using?",
-    name:"License"
-}
+    name:"license"
+},
 {
     type: "input",
     message:"What contributors will you list in your project?",
-    name:"Contributors"
-}
+    name:"contributors"
+},
 {
     type: "input",
     message:"What tests would you like to include?",
-    name:"Tests"
-}
+    name:"tests"
+},
 {
     type: "input",
     message:"What questions would you like to include?",
-    name:"Questions"
+    name:"questions"
 }
 
 ];
 inquirer
-.prompt({
-    //we have an array of questions, so we need to ask them. we
-    //could ask them via a loop, 
-})
+.prompt(questions).then(response =>{
+    console.log(response);
+}) 
 // function to write README file
 function writeToFile(fileName, data) {
 }
