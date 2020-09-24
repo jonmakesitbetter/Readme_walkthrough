@@ -47,7 +47,11 @@ const questions = [
 ];
 inquirer
 .prompt(questions).then(response =>{
+    const readme = generateMarkdown(reponse);
     console.log(response);
+    fs.writeFile(readme.md, readme, function(err){
+        if (err) throw err;
+    })
 }) 
 // function to write README file
 function writeToFile(fileName, data) {
