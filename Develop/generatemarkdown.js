@@ -24,8 +24,8 @@ function generateMarkdown(data) {
   ${data.tests}
   ## Questions
   If you have any questions, please feel free to contact me at
-  ![${data.questions}](${data.questions}) or see my GitHub at 
-  ![${data.user}](https://github.com/${data.user}/).
+  [${data.questions}](${data.questions}) or see my GitHub at 
+  [${data.user}](https://github.com/${data.user}/).
   `;
 }
 
