@@ -10,13 +10,23 @@ const questions = [
 },
 {
     type: "input",
+    message: "What is your GitHub user name?",
+    name: "user"
+},
+{
+    type: "input",
+    message: "What is the name of your repository?",
+    name: "repository"
+},
+{
+    type: "input",
     message: "What is the description of your project?",
-    name:"description"
+    name: "description"
 },
 {
     type: "input",
     message:"What are  your installation instructions?",
-    name:"installation"
+    name: "installation"
 },
 {
     type: "input",
@@ -24,9 +34,10 @@ const questions = [
     name:"instructions"
 },
 {
-    type: "input",
+    type: "list",
     message:"What license are you using?",
-    name:"license"
+    name:"license",
+    choices: ["MIT", "Apache", "BSD"]
 },
 {
     type: "input",
@@ -53,14 +64,3 @@ inquirer
         if (err) throw err;
     })
 }) 
-// function to write README file
-// function writeToFile(fileName, data) {
-// }
-
-// // function to initialize program
-// function init() {
-
-// }
-
-// // function call to initialize program
-// init();
