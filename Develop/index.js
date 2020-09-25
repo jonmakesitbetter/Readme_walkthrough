@@ -51,7 +51,7 @@ const questions = [
 },
 {
     type: "input",
-    message:"What questions would you like to include?",
+    message:"What is the best email address for asking you questions about this project?",
     name:"questions"
 }
 

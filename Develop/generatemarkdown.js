@@ -22,16 +22,10 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   ## Questions
-  ${data.questions}
+  If you have any questions, please feel free to contact me at
+  ![${data.questions}](${data.questions}) or see my GitHub at 
+  ![${data.user}](https://github.com/${data.user}/).
   `;
 }
 
 module.exports = generateMarkdown;
-
-//   function generateMarkdown(data) {
-//     return `# ${data.title}
-
-//   ## Description
-
-//   ${data.description}`
-//   }
