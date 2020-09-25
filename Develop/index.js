@@ -31,7 +31,7 @@ const questions = [
 {
     type: "input",
     message:"What are you usage instructions?",
-    name:"instructions"
+    name:"usage"
 },
 {
     type: "list",
@@ -41,12 +41,12 @@ const questions = [
 },
 {
     type: "input",
-    message:"What contributors will you list in your project?",
-    name:"contributors"
+    message:"What contribution guidelines will you list in your project?",
+    name:"contributing"
 },
 {
     type: "input",
-    message:"What tests would you like to include?",
+    message:"What test instructions would you like to include?",
     name:"tests"
 },
 {

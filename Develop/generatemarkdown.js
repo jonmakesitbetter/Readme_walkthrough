@@ -7,19 +7,19 @@ function generateMarkdown(data) {
   ${data.description}
   ## Table of Contents
   [installation](#Installation)
-  [instructions](#Instructions)
+  [usage](#Usage)
   [license](#License)
-  [contributors](#Contributors)
+  [contributing](#Contributing)
   [tests](#Tests)
   [questions](#Questions)
   ## Installation
   ${data.installation}
-  ## Instructions
-  ${data.instructions}
+  ## Usage
+  ${data.usage}
   ## License
   This project is under the ${data.license} license. 
-  ## Contributors
-  ${data.contributors}
+  ## Contributing
+  ${data.contributing}
   ## Tests
   ${data.tests}
   ## Questions
